@@ -39,7 +39,7 @@ $data = [
             'tag' => ['thiết kế nội thất','phong cách hiện đại']
         ],
         [
-            'name' => 'Thư viện trong nhà',
+            'name' => 'Home Library',
             'image' => 'banner/07.jpg',
             'location' => 'Thủ Đức, Hồ Chí Minh',
             'acreage' => '12',
