@@ -14,7 +14,7 @@
 </div>
 
 <div class="mt-5">
-    <div class="d-flex justify-content-center align-items-center gap-1">
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-1">
         <button data-choose-tag="all" class="btn btn-outline-dark px-3 text-capitalize">
             <small>tất cả</small>
         </button>
