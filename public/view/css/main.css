@@ -87,6 +87,43 @@ body.dark {
     background-color: var(--bs-dark-40);
 }
 
+.bg-light {
+    background-color: var(--bs-light) !important;
+}
+
+.bg-light-80 {
+    background-color: var(--bs-light-80) !important;
+}
+
+.bg-light-60 {
+    background-color: var(--bs-light-60) !important;
+}
+
+.bg-light-40 {
+    background-color: var(--bs-light-40) !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.bg-dark-80 {
+    background-color: var(--bs-dark-80) !important;
+}
+
+.bg-dark-60 {
+    background-color: var(--bs-dark-60) !important;
+}
+
+.bg-dark-40 {
+    background-color: var(--bs-dark-40) !important;
+}
+
+.bg-dark-20 {
+    background-color: var(--bs-dark-20) !important;
+}
+
+
 .text-light {
     color: var(--bs-light) !important;
 }
