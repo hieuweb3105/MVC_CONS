@@ -1,0 +1,78 @@
+#logo-header {
+    width: 36px;
+    height: 36px;
+}
+
+@media (max-width: 992px) {
+    #logo-header {
+        width: 28px;
+    }
+}
+
+.nav-link {
+    font-size: .9rem;
+    color: var(--bs-light-80);
+    text-shadow: 0 0 2px var(--bs-dark);
+}
+
+.nav-link:hover {
+    color: var(--bs-light);
+}
+
+.nav-link.on {
+    color: var(--bs-light);
+}
+
+@media (min-width :1199px) {
+    #group-btn-header {
+        position: absolute;
+        right: 0;
+        margin-right: 0.5rem;
+    }
+}
+
+.navbar-box {
+    box-shadow: 0 0 2px var(--bs-light);
+    background-color: var(--bs-dark-20) !important;
+    backdrop-filter: blur(6px);
+}
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translate(50%,0%);
+    z-index: 9999;
+    animation: backdown .8s ease-out;
+}
+
+@keyframes backdown {
+    from{
+        top: -10vh;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@media (min-width:1199px) {
+    .navbar-sticky {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+}
+
+
+.navbar-toggler {
+    color: var(--bs-light-40) !important;
+    box-shadow: none !important;
+    border-color: var(--bs-light-40);
+}
+
+#navbar-toggler-show, .collapsed #navbar-toggler-hide {
+    display: none;
+}
+
+#navbar-toggler-hide, .collapsed #navbar-toggler-show {
+    display: block;
+}
