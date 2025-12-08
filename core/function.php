@@ -287,7 +287,7 @@ function toast_show(){
                 }
             }
             .toast {
-                z-index: 9999;
+                z-index: 99999;
                 position: fixed;
                 top: 20px; /* Đặt toast ở đầu */
                 right: 20px; /* Đặt toast ở bên phải */
@@ -295,12 +295,14 @@ function toast_show(){
                 opacity: 0; /* Bắt đầu với độ mờ 0 */
                 transform: translateX(100%); /* Bắt đầu từ bên phải */
                 transition: opacity 0.5s, transform 0.5s; /* Thay đổi khi xuất hiện */
-                background-color : var(--bs-dark) !important;
+                background-color : var(--bs-dark-60) !important;
+                backdrop-filter: blur(6px);
                 color : var(--bs-dark-80) !important;
             }
             .toast-header {
-                background-color : var(--bs-dark) !important;
                 color : var(--bs-light-60) !important;
+                background-color : var(--bs-dark-60) !important;
+                backdrop-filter: blur(6px);
             }
             .toast-body {
                 display : flex;
