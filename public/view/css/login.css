@@ -1,0 +1,25 @@
+.bg-login img {
+    width: 150%;
+    height: 100%;
+    margin-left: -10rem;
+    filter: blur(2px);
+}
+
+.bg-login {
+    position: relative;
+    height: 100vh;
+}
+
+.bg-login .blur-img {
+    top: 0;
+    position: absolute;
+    width: 150%;
+    margin-left: -10rem;
+    height: 100%;
+}
+
+.bg-login .content {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}

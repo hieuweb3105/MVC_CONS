@@ -52,6 +52,12 @@ body.dark {
 
 }
 
+.box {
+    border: 1px solid var(--bs-light-40);
+    background-color: var(--bs-dark-40);
+    backdrop-filter: blur(6px);
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -228,7 +234,6 @@ body.dark {
     text-decoration: none;
     width: 100%;
     font-size: 14px;
-    background-color: var(--bs-light);
     color: var(--bs-light-40);
     border: 1px solid var(--bs-light-40);
     border-radius: 16px;
