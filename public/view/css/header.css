@@ -33,7 +33,7 @@
 
 .navbar-box {
     box-shadow: 0 0 2px var(--bs-light);
-    background-color: var(--bs-dark-20) !important;
+    background-color: var(--bs-dark-40) !important;
     backdrop-filter: blur(6px);
 }
 
