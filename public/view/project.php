@@ -18,21 +18,11 @@
         <button data-choose-tag="all" class="btn btn-outline-dark px-3 text-capitalize">
             <small>tất cả</small>
         </button>
-        <button data-choose-tag="villa" class="btn btn-outline-dark px-3 text-capitalize">
-            <small>villa</small>
+        <?php foreach ($list_tag as $tag) : ?>
+        <button data-choose-tag="<?= $tag ?>" class="btn btn-outline-dark px-3 text-capitalize">
+            <small><?= $tag ?></small>
         </button>
-        <button data-choose-tag="kiến trúc" class="btn btn-outline-dark px-3 text-capitalize">
-            <small>kiến trúc</small>
-        </button>
-        <button data-choose-tag="thiết kế nội thất" class="btn btn-outline-dark px-3 text-capitalize">
-            <small>thiết kế nội thất</small>
-        </button>
-        <button data-choose-tag="thiết kế cảnh quan" class="btn btn-outline-dark px-3 text-capitalize">
-            <small>thiết kế cảnh quan</small>
-        </button>
-        <button data-choose-tag="phong cách hiện đại" class="btn btn-outline-dark px-3 text-capitalize">
-            <small>phong cách hiện đại</small>
-        </button>
+        <?php endforeach ?>
     </div>
 
     <div id="du-an" class="row gap-2 gap-lg-0 mt-3">

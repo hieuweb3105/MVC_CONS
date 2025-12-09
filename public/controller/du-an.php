@@ -2,6 +2,7 @@
 
 
 $data = [
+    'list_tag' => ['nổi bật','villa','kiến trúc','thiết kế nội thất','thiết kế cảnh quan','phong cách hiện đại'],
     'list_project' => [
         [
             'name' => 'Villa Hoa Hồng Trắng',
