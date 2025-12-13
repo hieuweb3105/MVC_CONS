@@ -301,8 +301,7 @@ function toast_show(){
             }
             .toast-header {
                 color : var(--bs-light-60) !important;
-                background-color : var(--bs-dark-60) !important;
-                backdrop-filter: blur(6px);
+                background-color : transparent;
             }
             .toast-body {
                 display : flex;
@@ -326,6 +325,14 @@ function toast_show(){
                 padding: 0;
             }
 
+            .btn-toast-close i {
+                color : var(--bs-light-40);
+            }
+
+            .btn-toast-close i:hover {
+                color : var(--bs-light-80);
+            }
+
         </style>
         <!-- Content toast -->
         <div class="toast show animate__animated animate__fadeInRight" role="alert" aria-live="assertive" aria-atomic="true">
@@ -338,7 +345,7 @@ function toast_show(){
             </div>
             <div class="toast-body">
                 <span>{$icon}</span>
-                <span>{$message}</span>
+                <span class="text-light-60">{$message}</span>
             </div>
             <div class="bg-light line-bar"></div>
         </div>
