@@ -1,21 +1,37 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/home.css">
 
-<div class="section-introduce">
-    <img src="<?= URL_A ?>image/bg_header.png" alt="header introduce" class="">
-    <div class="content text-light text-center text-lg-start">
-        <h5 id="introduce-desc" class="name">
-            <?= WEB_NAME ?>
-        </h5>
-        <p class="title animate__animated animate__fadeInLeft animate__delay-1s">
-            <?= WEB_TITLE ?>
-        </p>
-        <div class="d-flex align-items-center flex-column flex-lg-row gap-3 mt-3 mt-lg-4">
-            <a href="#lien-he" class="btn btn-outline-light w-75 w-lg-fit-content animate__animated animate__fadeInUp animate__delay-2s">
-                Liên hệ thiết kế / thi công
-            </a>
-            <a href="#du-an" class="btn btn-outline-light w-75 w-lg-fit-content animate__animated animate__fadeInUp animate__delay-3s">
-                Xem dự án
-            </a>
+<div class="container px-0">
+    <div class="section-introduce">
+        <?php $i=0; foreach ($image_introduce as $item) : $i++?>
+            <img class="img-introduce <?= $i==1 ? "active" : "" ?>" src="<?= URL_A . $item['image'] ?>" alt="image introduce" index-bg-header="<?= $i ?>">
+        <?php endforeach ?>
+        <div class="container px-0 content text-light text-center text-lg-start">
+            <h5 id="introduce-desc" class="name">
+                <?= WEB_NAME ?>
+            </h5>
+            <p class="title animate__animated animate__fadeInLeft animate__delay-1s">
+                <?= WEB_TITLE ?>
+            </p>
+            <div class="d-flex align-items-center flex-column flex-lg-row gap-3 mt-3 mt-lg-4">
+                <a href="#lien-he" class="btn btn-outline-light w-75 w-lg-fit-content animate__animated animate__fadeInUp animate__delay-2s">
+                    Nhận báo giá dự án
+                </a>
+                <a href="#du-an" class="btn btn-outline-light w-75 w-lg-fit-content animate__animated animate__fadeInUp animate__delay-3s">
+                    Xem dự án đã hoàn thành
+                </a>
+            </div>
+            <div id="list-bg-header" class="list-bg-header container row mt-5 mt-lg-3">
+                <?php $i=0; foreach ($image_introduce as $item) : $i++?>
+                    <div class="col-6 col-md-3 px-1 animate__animated animate__fadeIn animate__delay-<?= $i ?>s">
+                        <div click-bg-header="<?= $i ?>" class="bg-header-btn <?= $i==1 ? "active" : "" ?> d-flex align-items-end">
+                            <img src="<?= URL_A . $item['image'] ?>" alt="Thiết kế kiến trúc">
+                            <div class="title">
+                                <?= $item['name'] ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
         </div>
     </div>
 </div>
@@ -63,3 +79,5 @@
         <?php endfor ?>
     </div>
 </div>
+
+<script src="<?= URL_P_V ?>js/carousel_introduce.js"></script>

@@ -106,32 +106,44 @@
 .section-introduce {
     position: relative;
     height: 100vh;
-    width: 100vw;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
     .section-introduce {
         height: 100vh;
-        width: 200vw;
     }
-    .section-introduce img{
+    .section-introduce .img-introduce{
         transform: translate(50% 100%);
     }
 }
 
-.section-introduce img {
+.section-introduce .img-introduce {
     position: absolute;
     height: 100%;
-    width: 100%;
-    bottom: 0;
-    z-index: -1;
+    width: 150%; 
     margin-left: -10rem;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 1;
+}
+
+.section-introduce .img-introduce.active {
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .section-introduce .content {
-    width: 100vw;
+    z-index: 3;
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
+}
+
+@media (max-width: 1199px) {
+    .section-introduce .content {
+        bottom: 50%;
+    }
 }
 
 .section-introduce .content .name {
@@ -151,4 +163,62 @@
     .section-introduce .content .title {
         font-size: 32px;
     }
+}
+
+.list-bg-header {
+    position: absolute;
+    top: 30vh;
+}
+
+@media (max-width: 1199px) {
+    .list-bg-header {
+        top: 25vh;
+        transform: translate(10px);
+    }
+}
+
+.bg-header-btn {
+    background-color: var(--bs-light-20);
+    border: 2px solid var(--bs-light-60);
+    border-radius: 24px;
+    box-shadow: -1px -1px 20px 2px  var(--bs-light-20),1px 1px 20px 2px var(--bs-dark-20);
+    padding: 8px 16px;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 50%;
+    margin: 6px;
+    background: var(--bs-dark-20);
+    backdrop-filter: blur(3px);
+    transition: linear .5s;
+}
+
+.bg-header-btn .title {
+    color: var(--bs-light);
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    z-index: 1;
+    text-shadow: 1px 1px 2px var(--bs-dark);
+}
+
+.bg-header-btn img {
+    position: absolute;
+    width: 100%;
+    left: 10rem;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.4;
+    margin-left: -10rem;
+    transition: 0.5s ease-in-out; /* Dùng để tạo hiệu ứng trượt */
+}
+
+.bg-header-btn.active,.bg-header-btn:hover {
+    transition: linear .5s;
+    background: transparent;
+}
+
+.bg-header-btn.active img,.bg-header-btn:hover img {
+    transform: scale(1.1);
+    opacity: .9;
+    transition: linear .5s;
 }
