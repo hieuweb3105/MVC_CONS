@@ -16,15 +16,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CDN AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CDN Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.1">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.2">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.1">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/loader.css">
 </head>
 
 <?= toast_show() ?>
 
 <body class="">
+    <?php if(BOOL_LOADER) : ?>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+    <?php endif ?>
+
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg container px-3 px-lg-0 navbar-sticky">
         <div class="container rounded-3 navbar-box py-2 mt-lg-3 mt-2">

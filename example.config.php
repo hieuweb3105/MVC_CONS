@@ -48,9 +48,10 @@ const DB_NAME = '';         //  tên cơ sở dữ liệu
 
 // ---[  BOOL  ] --- --- --- --- --- --- --- ---
 
-const BOOL_CHATIVE = false;          //  tính năng chat trực tuyến chative
+const BOOL_CHATIVE = false;         //  tính năng chat trực tuyến chative
 const BOOL_SPINNER = false;         //  hiệu ứng tải trang
 const BOOL_UPGRADE = false;         //  trang bảo trì
+const BOOL_LOADER  = false;         //  hiệu ứng page loader
 
 // ---[  TIME  ] --- --- --- --- --- --- --- ---
 

@@ -78,6 +78,7 @@
 </body>
 
 <!-- JS custom -->
+<script src="<?= URL_P_V ?>js/loader.js"></script>
 <script src="<?= URL_P_V ?>js/scroll.js"></script>
 <script src="<?= URL_P_V ?>js/paragraph.js"></script>
 <!-- CDN JS Bootstrap 5 -->
