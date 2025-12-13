@@ -19,8 +19,8 @@
     <!-- CDN Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.2">
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.2">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.3">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.3">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/loader.css">
 </head>

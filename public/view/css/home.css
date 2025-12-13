@@ -108,6 +108,16 @@
     height: 100vh;
 }
 
+.section-introduce .blur-introduce {
+    position: absolute;
+    width: 100vw;
+    margin-left: -10rem;
+    height: 100vh;
+    top: 0;
+    background: var(--bs-dark-60);
+    z-index: 3;
+}
+
 @media (max-width: 1199px) {
     .section-introduce {
         height: 100vh;

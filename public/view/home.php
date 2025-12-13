@@ -2,6 +2,7 @@
 
 <div class="container px-0">
     <div class="section-introduce">
+        <div class="blur-introduce"></div>
         <?php $i=0; foreach ($image_introduce as $item) : $i++?>
             <img class="img-introduce <?= $i==1 ? "active" : "" ?>" src="<?= URL_A . $item['image'] ?>" alt="image introduce" index-bg-header="<?= $i ?>">
         <?php endforeach ?>
