@@ -35,6 +35,7 @@
             <span></span><span></span><span></span><span></span><span></span>
         </div>
     </div>
+    <script src="<?= URL_P_V ?>js/loader.js"></script>
     <?php endif ?>
 
     <!-- Navbar -->
