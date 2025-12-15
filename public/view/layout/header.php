@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.3">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.3">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/loader.css">
 </head>
 
 <?= toast_show() ?>
@@ -30,12 +29,13 @@
 <body class="">
     <?php if(BOOL_LOADER) : ?>
     <!-- Loader -->
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/loader.css?v=1.0.1">
     <div id="loader-wrapper">
         <div id="loader">
             <span></span><span></span><span></span><span></span><span></span>
         </div>
     </div>
-    <script src="<?= URL_P_V ?>js/loader.js"></script>
+    <script src="<?= URL_P_V ?>js/loader.js?v=1.0.1"></script>
     <?php endif ?>
 
     <!-- Navbar -->
